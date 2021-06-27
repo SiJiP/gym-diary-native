@@ -8,9 +8,12 @@ import {name as appName} from './app.json';
 import {store} from './src/app/store';
 import {Provider} from 'react-redux';
 import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
 
 AppRegistry.registerComponent(appName, () => () => (
-  <Provider store={store}>
-    <App />
-  </Provider>
+  <NavigationContainer>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </NavigationContainer>
 ));

@@ -1,21 +1,14 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the Redux TypeScript template
- * https://github.com/rahsheen/react-native-template-redux-typescript
- *
- * @format
- */
-
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import React from 'react';
-import {View, Text} from 'react-native';
+import PersonalDiary from './src/components/PersonalDiary';
+
+const Drawer = createDrawerNavigator();
 
 const App = () => {
   return (
-    <View>
-      <Text>My text work</Text>
-    </View>
+    <Drawer.Navigator initialRouteName="Diary">
+      <Drawer.Screen name="Diary" component={PersonalDiary} />
+    </Drawer.Navigator>
   );
 };
 
