@@ -1,12 +1,8 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import GD_MainHeader from './MainHeader';
 
 const PersonalDiary = () => {
-  return (
-    <View>
-      <Text>Some text</Text>
-    </View>
-  );
+  return <GD_MainHeader />;
 };
 
 export default PersonalDiary;
